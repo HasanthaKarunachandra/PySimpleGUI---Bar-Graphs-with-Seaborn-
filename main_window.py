@@ -5,6 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#kaggle url for data set=https://www.kaggle.com/code/rtatman/datasets-for-regression-analysis/notebook
 data=pd.read_csv("Fish.csv")
 
 Species=data['Species'].value_counts()
