@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import pandas as pd 
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -36,7 +36,7 @@ def draw_figure(canvas,figure):
     figure_canvas_agg.get_tk_widget().pack(side='top',fill='both',expand=1)
     return figure_canvas_agg
 
-window=sg.Window("PySimpleGUI+MatPlotlib barplot",size=(480,480),layout=layout,finalize=True)
+window=sg.Window("PySimpleGUI+MatPlotlib barplot",size=(720,720),layout=layout,finalize=True)
 
 draw_figure(window['_CANVAS_'].TKCanvas,create_plot(index,values_count))
 
